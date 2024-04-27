@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "DBCooper_backend": {
+      "main": "src/DBCooper_backend/main.mo",
+      "type": "motoko"
+    },
+    "DBCooper_frontend": {
+      "dependencies": [
+        "DBCooper_backend"
+      ],
+      "source": [
+        "src/DBCooper_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "DBCooper_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
