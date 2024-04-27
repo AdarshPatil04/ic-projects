@@ -9,7 +9,6 @@ function Item(props) {
   const [name, setName] = useState();
   const [owner, setOwner] = useState();
   const [image, setImage] = useState();
-
   const id = Principal.fromText(props.id);
 
   const localHost = "http://localhost:8080/";
